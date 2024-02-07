@@ -124,12 +124,25 @@ function analysis(finances) {
 
 let avgChange = totalChange / (totalMonths - 1);
 
-
+console.log("Financial Analysis");
 console.log("Total Months: ", totalMonths);
 console.log("Total: $", totalMoney);
 console.log("Average Change: $", avgChange.toFixed(2));
 console.log("Greatest increase in Profit/Losses:", increase.date, "($", increase.amount, ")");
 console.log("Greatest decrease in Profit/Losses:", decrease.date, "($", decrease.amount, ")");
+
+// document.write allows you show results on the webpage directly, document.write("<br>")inserts a line break.
+document.write("Financial Analysis");
+document.write("<br>")
+document.write("Total Months: ", totalMonths);
+document.write("<br>")
+document.write("Total: $", totalMoney);
+document.write("<br>")
+document.write("Average Change: $", avgChange.toFixed(2));
+document.write("<br>")
+document.write("Greatest increase in Profit/Losses:", increase.date, "($", increase.amount, ")");
+document.write("<br>")
+document.write("Greatest decrease in Profit/Losses:", decrease.date, "($", decrease.amount, ")");
 }
 
 
