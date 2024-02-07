@@ -87,7 +87,9 @@ var finances = [
   ['Feb-2017', 671099],
 
 ];
-// finances.length will give the total number in the array and hence the total number of months
+/*  finances.length will give the total number in the array and hence the total number of months
+{ date: "", amount: 0 } this pulls the date as a string and the amount as a number */
+
 function analysis(finances) {
   let totalMonths = finances.length;
   let totalMoney = 0;
