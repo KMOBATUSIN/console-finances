@@ -87,7 +87,9 @@ var finances = [
   ['Feb-2017', 671099],
 
 ];
-// finances.length will give the total number in the array and hence the total number of months
+/*  finances.length will give the total number in the array and hence the total number of months
+{ date: "", amount: 0 } this pulls the date as a string and the amount as a number */
+
 function analysis(finances) {
   let totalMonths = finances.length;
   let totalMoney = 0;
@@ -128,8 +130,8 @@ console.log("Financial Analysis");
 console.log("Total Months: ", totalMonths);
 console.log("Total: $", totalMoney);
 console.log("Average Change: $", avgChange.toFixed(2));
-console.log("Greatest increase in Profit/Losses:", increase.date, "($", increase.amount, ")");
-console.log("Greatest decrease in Profit/Losses:", decrease.date, "($", decrease.amount, ")");
+console.log("Greatest increase in Profit/Losses: ", increase.date, " ($", increase.amount, ")");
+console.log("Greatest decrease in Profit/Losses: ", decrease.date, "( $", decrease.amount, ")");
 
 // document.write allows you show results on the webpage directly, document.write("<br>")inserts a line break.
 document.write("Financial Analysis");
@@ -140,9 +142,9 @@ document.write("Total: $", totalMoney);
 document.write("<br>")
 document.write("Average Change: $", avgChange.toFixed(2));
 document.write("<br>")
-document.write("Greatest increase in Profit/Losses:", increase.date, "($", increase.amount, ")");
+document.write("Greatest increase in Profit/Losses :", increase.date, " ($", increase.amount, ")");
 document.write("<br>")
-document.write("Greatest decrease in Profit/Losses:", decrease.date, "($", decrease.amount, ")");
+document.write("Greatest decrease in Profit/Losses :", decrease.date, " ($", decrease.amount, ")");
 }
 
 
